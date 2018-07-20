@@ -3614,6 +3614,7 @@ actionbar > revealer >  box {
 }
 
 scrolledwindow {
+  padding-top: 1px;
   viewport > list,
   viewport > stack list {
     background-color: $sidebar_bg_color;
