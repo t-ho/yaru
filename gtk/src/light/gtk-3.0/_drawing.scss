@@ -719,7 +719,7 @@
       }
     }
 
-    border: 1px solid if($bg==$dark_fill, if($variant=='light', $borders_edge, $bg), transparent);
+    border: 1px solid if($bg==$dark_fill, if($variant=='light', $borders_edge, $alt), transparent);
     border-top-color: darken($bg, if($variant=='light', 10%, 5%));
     transition: $backdrop_transition;
 
