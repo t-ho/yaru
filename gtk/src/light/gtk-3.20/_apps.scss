@@ -603,3 +603,78 @@ normal-button {
    // so we're pushing it to the right to have the focus ring be displayed properly
    margin-left: 1px 
   }
+
+  /***********
+ * Unity7 *
+ ***********/
+
+ UnityDecoration {
+  -UnityDecoration-extents: 28px 0 0 0;
+  -UnityDecoration-input-extents: 10px;
+
+  -UnityDecoration-shadow-offset-x: 1px;
+  -UnityDecoration-shadow-offset-y: 5px;
+  -UnityDecoration-active-shadow-color: alpha ($jet, 0.75);
+  -UnityDecoration-active-shadow-radius: 30px;
+  -UnityDecoration-inactive-shadow-color: $silk;
+  -UnityDecoration-inactive-shadow-radius: 25px;
+
+  -UnityDecoration-glow-size: 10px;
+  -UnityDecoration-glow-color: rgb (221, 72, 20);
+
+  -UnityDecoration-title-indent: 10px;
+  -UnityDecoration-title-fade: 35px;
+  -UnityDecoration-title-alignment: 0.0;
+}
+
+/* Definitions of UnityDecoration .top (and :backdrop) are now shared with
+* Gtk .titlebar (and :backdrop); .left and .right are not used by this theme */
+
+/* Panel Style */
+
+UnityPanelWidget,
+.unity-panel {
+  background-color:lighten($jet, 2%);
+  //background-image: lighten($jet, 2%);
+  border: none;
+
+  color: $porcelain;
+  text-shadow:none;
+}
+
+UnityPanelWidget:backdrop,
+.unity-panel:backdrop {
+  color: #807d78;
+}
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+  background-color: transparent;
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+  // border-width: 1px 1px 0 1px;
+  // -gtk-icon-shadow: 0 -1px $jet;
+}
+
+.unity-panel.menubar:backdrop,
+.unity-panel .menubar *:backdrop {
+  color: $backdrop_menu_color;
+}
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover {
+  background-image: $base_hover_color;
+}
+
+
+@keyframes playbackmenuitem_spinner {
+  to { -gtk-icon-transform: rotate(1turn); }
+}
+
+.menu IdoPlaybackMenuItem.menuitem:active {
+  -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+  animation: playbackmenuitem_spinner 1s infinite linear;
+  color: $selected_bg_color;
+}
