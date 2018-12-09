@@ -17,9 +17,10 @@ $yellow: #F89B0F;
 $green: #3EB34F;
 $blue: #19B6EE;
 $purple: #762572;
+$cyan: #00BCD4;
 
 // Terminal colors
-$terminal_bg_color: #300A24;
+$terminal_bg_color: #000000;
 $terminal_base_color: lighten($terminal_bg_color, 5%);
 $terminal_fg_color: white;
 $terminal_borders_color: darken($terminal_bg_color, 10%);

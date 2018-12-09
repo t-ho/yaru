@@ -102,7 +102,7 @@ StEntry {
   //&:hover { @include entry(hover);}
   &:focus { @include entry(focus);}
   &:insensitive { @include entry(insensitive);}
-  selection-background-color: darken($blue,10%);
+  selection-background-color: darken($cyan,10%);
   selected-color: $selected_fg_color;
   StIcon.capslock-warning {
     icon-size: 16px;
@@ -2123,7 +2123,8 @@ StScrollBar {
 }
 
 #lockDialogGroup {
-  background-color: #2C001E;
+  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
+  background-repeat: repeat;
 }
 
 #screenShieldNotifications {

@@ -570,7 +570,7 @@ normal-button {
      &:backdrop { background-color: $backdrop_headerbar_bg_color; }
    }
   #dot_grid {
-    .empty { background-color: transparentize($blue, 0.6); }
+    .empty { background-color: transparentize($cyan, 0.6); }
   }
   #page_title { color: $headerbar_fg_color; }
 }

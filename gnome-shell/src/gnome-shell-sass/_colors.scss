@@ -15,15 +15,15 @@ $dash_bg_color: $panel_bg_color;
 $menu_color: #252525;
 //
 $selected_fg_color: #ffffff;
-$selected_bg_color: $orange;
+$selected_bg_color: $cyan;
 $selected_borders_color: if($variant=='light', darken($selected_bg_color, 5%),
                                                darken($selected_bg_color, 15%));
-$text_selection: lighten($blue,35%);
-$focus_color: $orange;
+$text_selection: lighten($cyan,35%);
+$focus_color: $cyan;
 
 $borders_color: if($variant =='light', darken($bg_color,30%), darken($bg_color,12%));
 $borders_edge: if($variant =='light', white, transparentize($fg_color, 0.9));
-$link_color: $blue;
+$link_color: $cyan;
 //
 $link_visited_color: if($variant == 'light', darken($link_color,20%),
                                      lighten($link_color,10%));
@@ -31,10 +31,10 @@ $dark_fill: #C7C7C7;
 //
 $warning_color: $yellow;
 $error_color: $red;
-$success_color: $green;
+$success_color: $cyan;
 $destructive_color: darken($red, 10%);
-$neutral_color: $blue;
-$indication_bg_color: $blue;
+$neutral_color: $cyan;
+$indication_bg_color: $cyan;
 $inactive_indication_bg_color: darken($ash,5%);
 //
 $osd_fg_color: $fg_color;

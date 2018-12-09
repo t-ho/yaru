@@ -256,7 +256,7 @@ assistant {
 spinner {
   background: none;
   opacity: 0; // non spinning spinner makes no sense
-  color: $blue;
+  color: $cyan;
   -gtk-icon-source: -gtk-icontheme('process-working-symbolic');
 
   &:checked {
@@ -266,7 +266,7 @@ spinner {
     &:disabled { opacity: 0.5; }
   }
 
-  &:backdrop { color: _backdrop_color($blue); }
+  &:backdrop { color: _backdrop_color($cyan); }
 }
 
 
@@ -1999,6 +1999,7 @@ headerbar { // headerbar border rounding
   &:active { box-shadow: inset 0 -2px $insensitive_fg_color; }
 
   &:checked, &:checked:active {
+    box-shadow: inset 0 -2px $cyan; 
     color: $fg_color;
     &:hover { box-shadow: inset 0 -2px $insensitive_fg_color; }
   }
